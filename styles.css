@@ -22,7 +22,7 @@ nav ul li {
     margin: 0 15px;
 }
 nav ul li a {
-    color: white;
+    color: rgb(255, 4, 4);
     text-decoration: none;
     font-weight: bold;
 }
@@ -33,7 +33,6 @@ main {
 section {
     height: 100vh;
     display: flex;
-    justify-content: center;
     align-items: center;
     text-align: center;
     background: #222;
@@ -41,7 +40,7 @@ section {
 }
 
 #principal {
-    background: url('https://st3.depositphotos.com/2389277/17324/i/450/depositphotos_173244660-stock-photo-muscular-man-exercising-biceps-with.jpg') no-repeat center center/cover;
+    background: url('https://img.freepik.com/free-photo/black-white-photo-determined-athlete-lifting-barbell-gym-while-his-athletic-friends-are-supporting-him_637285-2521.jpg?semt=ais_hybrid') no-repeat center center/cover;
     justify-content: left;
     font-size: xx-large;
     padding-left: 10px;
