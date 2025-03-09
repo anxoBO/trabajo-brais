@@ -15,9 +15,9 @@
         <nav>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="#">Información del torneo</a></li>
-                <li><a href="#">Contacto</a></li>
-                <li><a href="#">Únete a nosotros</a></li>
+                <li><a href="#horarios">Información del torneo</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#registro">Únete a nosotros</a></li>
             </ul>
         </nav>
     </header>
@@ -35,7 +35,7 @@
             </div>
         </section>
         
-        <section class="horarios">
+        <section id="horarios" class="horarios">
             <h2>Horarios del evento</h2>
             <ul>
                 <li>9:00 AM - Sesión de Apertura</li>
@@ -44,15 +44,6 @@
             </ul>
         </section>
         
-        <section class="actividades">
-            <h2>Actividades en la ciudad</h2>
-            <ul>
-                <li><a href="https://www.catedraldesantiago.es/" target="_blank">Visita a la Catedral de Santiago</a></li>
-                <li><a href="https://www.turgalicia.es/" target="_blank">Gastronomía local y mercados</a></li>
-                <li><a href="https://www.camino.gal/" target="_blank">Senderismo por el Camino de Santiago</a></li>
-                <li><a href="https://www.santiagoturismo.com/" target="_blank">Tour por la ciudad</a></li>
-            </ul>
-        </section>
         <section class="informacion">
             <h2>Información del Evento</h2>
             <p>El evento de powerlifting 2025 se llevará a cabo en el Polideportivo Municipal de Santiago de Compostela, Galicia. Contaremos con la participación de atletas de diferentes categorías y una serie de actividades complementarias para los asistentes.</p>
@@ -60,8 +51,68 @@
             <p><strong>Lugar:</strong> Polideportivo Municipal de Santiago de Compostela</p>
             <p><strong>Organizado por:</strong> Federación Gallega de Powerlifting</p>
         </section>
+        <section id="registro" class="registro">
+            <h2>Regístrate al Torneo</h2>
+            <p>¡No pierdas la oportunidad de participar en el evento de powerlifting más emocionante del año! Completa el formulario para inscribirte.</p>
+            <form>
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
         
-        <section class="contacto">
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
+        
+                <label for="categoria">Categoría:</label>
+                <select id="categoria" name="categoria" required>
+                    <option value="">Selecciona tu categoría</option>
+                    <option value="novato">Novato</option>
+                    <option value="intermedio">Intermedio</option>
+                    <option value="avanzado">Avanzado</option>
+                </select>
+        
+                <label for="comentarios">Comentarios adicionales:</label>
+                <textarea id="comentarios" name="comentarios" placeholder="¿Algo que debamos saber?" rows="4"></textarea>
+        
+                <button type="submit">Enviar inscripción</button>
+            </form>
+        </section>
+        <section class="actividades">
+            <h2>Actividades en la ciudad</h2>
+            <ul>
+                <li><a href="https://www.civitatis.com/es/santiago-de-compostela/visita-guiada-museo-catedral-santiago/?srsltid=AfmBOooQsmWoZOsL4SDa_aRyfqSr3oQVxrasBxE57Mrf6BzBxoiNPzyC" target="_blank">Visita a la Catedral de Santiago</a></li>
+                <li><a href="https://www.turgalicia.es/" target="_blank">Gastronomía local y mercados</a></li>
+                <li><a href="https://www.civitatis.com/es/santiago-de-compostela/tour-peregrino-camino-santiago/" target="_blank">Senderismo por el Camino de Santiago</a></li>
+                <li><a href="https://www.civitatis.com/es/santiago-de-compostela/visita-guiada-santiago-compostela/" target="_blank">Tour por la ciudad</a></li>
+            </ul>
+        </section>
+        <section id="restaurantes" class="actividades">
+            <h2>Restaurantes Recomendados</h2>
+            <p>Disfruta de la gastronomía local en algunos de los mejores restaurantes cerca del evento:</p>
+            <ul>
+                <li>
+                    <h3><a href="https://osendeiro.com" target="_blank">O Sendeiro</a></h3>
+                    <p>Platos innovadores con la comida tradicional gallega. Especializado en tapas gallegas, como pulpo a la gallega, empanadas y mejillones frescos. Perfecto para un almuerzo típico.</p>
+                </li>
+                <li>
+                    <h3><a href="https://amaceta.com/es" target="_blank">A Maceta</a></h3>
+                    <p>Reserva ahora tu mesa y disfruta del Restaurante A Maceta. Disponemos de menús especiales para grupos y menú infantil.</p>
+                </li>
+                <li>
+                    <h3><a href="https://www.ochefnofogar.es" target="_blank">O Chef no Fogar</a></h3>
+                    <p>O Chef no Fogar somos una empresa dedicada a la preparación de comida casera para llevar, elaborada con productos naturales, sanos y equilibrados. 
+                        Especializados en platos para altos deportistas.
+                    </p>
+                </li>
+                <li>
+                    <h3><a href="https://areacentral.es/es/lolaylia2/" target="_blank">Lola y Lía</a></h3>
+                    <p>Es el lugar perfecto para hacer una pausa y recargar energías durante tus compras en el Outlet Área Central. Disfruta de una propuesta gastronómica única, con desayunos, brunchs, meriendas y menús.</p>
+                </li>
+                <li>
+                    <h3><a href="https://www.centralrestaurante.com" target="_blank">Central Restaurante</a></h3>
+                    <p>El Central es uno de los restaurantes más populares del casco antiguo compostelano, gracias a su buen hacer y su continua presencia durante más de veinte años en el sector. La base de su cocina son los productos gallegos de primera calidad.</p>
+                </li>
+            </ul>
+        </section>
+        <section id="contacto" class="contacto">
             <h2>Contáctenos</h2>
             <p>Si tienes alguna pregunta o necesitas más información, no dudes en ponerte en contacto con nosotros:</p>
             <form>
@@ -84,7 +135,7 @@
         </section>
     </main>
     <footer>
-        <p>&copy; 2025 Evento</p>
+        <p>&copy; 2025 Powerlifting lifting legend</p>
         </footer>
     </body>
     </html>

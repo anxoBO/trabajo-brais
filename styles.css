@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
@@ -46,6 +50,7 @@ main {
 
 section {
     margin-bottom: 20px;
+    scroll-margin-top: 80px;
 }
 
 .galeria {
@@ -181,6 +186,60 @@ footer {
 
 .informacion p, .contacto p {
     margin-bottom: 10px;
+}
+
+.registro {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #9a8383;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.registro h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.registro p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+form input, form select, form textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+form button {
+    background: #121212;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+form button:hover {
+    background: #444;
 }
 
 .contacto form {
