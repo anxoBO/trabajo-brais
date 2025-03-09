@@ -14,7 +14,7 @@
             <img src="./IMG/logo.png" alt="Logo">
         <nav>
             <ul>
-                <li><a href="#">Inicio</a></li>
+                <li><a href="index.html">Inicio</a></li>
                 <li><a href="#">Información del torneo</a></li>
                 <li><a href="#">Contacto</a></li>
                 <li><a href="#">Únete a nosotros</a></li>
@@ -22,32 +22,69 @@
         </nav>
     </header>
 
-    <section>
-        <h1>Bienvenido a Liftinleyen</h1>
-        <h2>El mayor torneo de Powerlifting del siglo</h2>
-        <p>Únete a nosotros en una celebración de fuerza y resistencia. Descubre lo mejor del powerlifting en un evento inolvidable.</p>
-        <div>
-            <a href="#">Inscríbete Ahora</a>
-            <a href="#">Ver Detalles</a>
-        </div>
-    </section>
-
-    <section>
-        <h2>Aspectos Destacados del Torneo</h2>
-        <div>
-            <article>
-                <h3>Competencia de Nivel Internacional</h3>
-                <p>Atletas de todo el mundo se reúnen para demostrar su fuerza en distintas categorías y divisiones.</p>
-            </article>
-            <article>
-                <h3>Premios y Reconocimientos</h3>
-                <p>Increíbles premios en efectivo, medallas y trofeos para los ganadores de cada categoría.</p>
-            </article>
-            <article>
-                <h3>Exhibiciones y Talleres</h3>
-                <p>Aprende de los profesionales y descubre nuevas técnicas en nuestras sesiones especiales.</p>
-            </article>
-        </div>
-    </section>
-</body>
-</html>
+    <main>
+        <section class="galeria">
+            <h2>Galería de Fotos</h2>
+            <div class="contenedor-galeria">
+                <img src="IMG/imagen1.jpg" alt="Foto 1">
+                <img src="IMG/imagen2.jpg" alt="Foto 2">
+                <img src="IMG/imagen3.jpg" alt="Foto 3">
+                <img src="IMG/imagen4.jpg" alt="Foto 4">
+                <img src="IMG/imagen5.jpg" alt="Foto 5">
+                <img src="IMG/imagen6.jpg" alt="Foto 6">
+            </div>
+        </section>
+        
+        <section class="horarios">
+            <h2>Horarios del evento</h2>
+            <ul>
+                <li>9:00 AM - Sesión de Apertura</li>
+                <li>10:00 AM - Competición por Categorías</li>
+                <li>2:00 PM - Finales y Premiación</li>
+            </ul>
+        </section>
+        
+        <section class="actividades">
+            <h2>Actividades en la ciudad</h2>
+            <ul>
+                <li><a href="https://www.catedraldesantiago.es/" target="_blank">Visita a la Catedral de Santiago</a></li>
+                <li><a href="https://www.turgalicia.es/" target="_blank">Gastronomía local y mercados</a></li>
+                <li><a href="https://www.camino.gal/" target="_blank">Senderismo por el Camino de Santiago</a></li>
+                <li><a href="https://www.santiagoturismo.com/" target="_blank">Tour por la ciudad</a></li>
+            </ul>
+        </section>
+        <section class="informacion">
+            <h2>Información del Evento</h2>
+            <p>El evento de powerlifting 2025 se llevará a cabo en el Polideportivo Municipal de Santiago de Compostela, Galicia. Contaremos con la participación de atletas de diferentes categorías y una serie de actividades complementarias para los asistentes.</p>
+            <p><strong>Fecha:</strong> 15 de marzo de 2025</p>
+            <p><strong>Lugar:</strong> Polideportivo Municipal de Santiago de Compostela</p>
+            <p><strong>Organizado por:</strong> Federación Gallega de Powerlifting</p>
+        </section>
+        
+        <section class="contacto">
+            <h2>Contáctenos</h2>
+            <p>Si tienes alguna pregunta o necesitas más información, no dudes en ponerte en contacto con nosotros:</p>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
+                
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+        <section class="comentarios">
+            <h2>Comentarios de otros usuarios</h2>
+            <textarea placeholder="Escribe un comentario..."></textarea>
+            <button>Enviar</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Evento</p>
+        </footer>
+    </body>
+    </html>

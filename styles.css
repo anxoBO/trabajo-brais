@@ -36,78 +36,247 @@ nav a {
     color: #fff;
     font-weight: 700;
 }
-
-section:first-of-type {
-    background: linear-gradient(rgba(139, 0, 0, 0.7), rgba(139, 0, 0, 0.7)), url('./IMG/fondo.png');
-    background-size: contain;
-    background-position: center;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 60px 20px;
+h1, h2 {
+    margin-bottom: 10px;
 }
 
-section:first-of-type h1 {
-    font-size: 3em;
+main {
+    padding: 20px;
+}
+
+section {
     margin-bottom: 20px;
 }
 
-section:first-of-type p {
-    font-size: 1.2em;
-    margin-bottom: 30px;
+.galeria {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
 }
 
-section:first-of-type div {
-    display: flex;
-    gap: 20px;
-}
-
-section:first-of-type a {
-    text-decoration: none;
-    padding: 12px 20px;
-    border-radius: 8px;
-    font-weight: 700;
-}
-
-section:first-of-type a:first-of-type {
-    background: red;
-    color: #fff;
-}
-
-section:first-of-type a:last-of-type {
-    background: #fff;
-    color: #000;
-}
-
-section:nth-of-type(2) {
-    color: #000;
-    padding: 60px 20px;
-}
-
-section:nth-of-type(2) h2 {
+.galeria h2 {
     text-align: center;
-    margin-bottom: 40px;
-    color: #fff;
+    margin-bottom: 15px;
 }
 
-section:nth-of-type(2) div {
+.contenedor-galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+}
+
+.contenedor-galeria img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contenedor-galeria img:hover {
+    transform: scale(1.2); /* Aumenta el tamaño al 120% */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Añade una sombra para un efecto elegante */
+}
+.galeria {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #c1a0a0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.galeria h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.contenedor-galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+}
+
+.contenedor-galeria img {
+    width: 200px; /* Ancho fijo para todas las imágenes */
+    height: 200px; /* Alto fijo para todas las imágenes */
+    object-fit: cover; /* Ajusta la imagen para que se recorte sin deformarla */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contenedor-galeria img:hover {
+    transform: scale(1.2); /* Aumenta el tamaño al pasar el cursor */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Añade sombra */
+}
+
+
+.horarios ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.horarios ul li {
+    margin-bottom: 5px;
+}
+
+.comentarios textarea {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.comentarios button {
+    background: #444;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.comentarios button:hover {
+    background: #666;
+}
+
+.actividades ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.actividades ul li {
+    margin-bottom: 10px;
+}
+
+.actividades ul li a {
+    text-decoration: none;
+    color: #444;
+    font-weight: bold;
+}
+
+.actividades ul li a:hover {
+    color: #007BFF;
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 20px;
+    background: #444;
+    color: white;
+    margin-top: 20px;
+}
+
+.informacion, .contacto {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #9a8383;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.informacion p, .contacto p {
+    margin-bottom: 10px;
+}
+
+.contacto form {
     display: flex;
-    justify-content: center;
-    gap: 20px;
+    flex-direction: column;
 }
 
-article {
-    background: #a00000;
-    color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    flex: 1;
-    min-width: 200px;
+.contacto label {
+    margin-bottom: 5px;
+    font-weight: bold;
 }
 
-article h3 {
-    margin-top: 0;
+.contacto input, .contacto textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contacto button {
+    background: #444;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contacto button:hover {
+    background: #666;
+}
+
+@media (max-width: 768px) {
+    header {
+        background: #121212;
+        padding: 10px 20px; /* Ajusta el espacio para pantallas pequeñas */
+        display: flex;
+        flex-direction: column; /* Cambia la disposición a vertical */
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        width: 100%; /* Asegura que ocupe todo el ancho de la pantalla */
+        top: 0;
+        z-index: 1000;
+    }
+
+    nav ul {
+        flex-direction: column; /* Coloca los enlaces de navegación en una columna */
+        gap: 10px; /* Reduce el espacio entre los enlaces */
+        margin-top: 10px; /* Añade espacio superior entre el logo y los enlaces */
+        padding: 0;
+        width: 100%; /* Asegura que se alineen correctamente */
+        text-align: center; /* Centra los enlaces en la pantalla */
+    }
+
+    header img {
+        width: 50px; /* Reduce el tamaño del logo */
+        margin-bottom: 10px; /* Añade espacio inferior entre el logo y el menú */
+    }
+
+    nav a {
+        font-size: 14px; /* Ajusta el tamaño de la fuente para dispositivos pequeños */
+        text-decoration: none;
+        color: #fff;
+        font-weight: 700;
+    }
+    
+    main {
+        margin-top: 200px;
+        padding: 10px; /* Reduce el espacio alrededor del contenido */
+    }
+
+    section {
+        margin-bottom: 15px; /* Reduce el margen inferior entre secciones */
+    }
+
+    .imagenes img, .contenedor-galeria img {
+        width: 100%; /* Haz que las imágenes ocupen todo el ancho del contenedor */
+        height: auto; /* Mantén la proporción de las imágenes */
+    }
+
+    .horarios ul {
+        padding-left: 15px; /* Ajusta los márgenes para listas */
+    }
+
+    .comentarios textarea {
+        height: 80px; /* Reduce la altura del cuadro de comentarios */
+    }
+
+    .actividades ul li, .contacto label, .contacto input, .contacto textarea {
+        font-size: 14px; /* Ajusta el tamaño de fuente para facilitar la lectura */
+    }
+
+    .contacto button {
+        padding: 8px 15px; /* Reduce el tamaño del botón en dispositivos pequeños */
+        font-size: 14px; /* Ajusta la fuente del botón */
+    }
 }
