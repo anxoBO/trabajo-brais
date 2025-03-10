@@ -5,23 +5,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $categoria = $_POST['categoria'];
     $comentarios = $_POST['comentarios'];
 
-    $filename = "datos_cuestionario.csv";
-    $file_exists = file_exists($filename);
+    $filename = "datos_cuestionario.txt";
 
-    // Abrir el archivo para escritura
-    $file = fopen($filename, 'a');
+    // Formatear los datos
+    $data = "Nombre: $nombre\nCorreo Electrónico: $email\nCategoría: $categoria\nComentarios: $comentarios\n\n";
 
-    // Escribir el encabezado si el archivo no existía
-    if (!$file_exists) {
-        fputcsv($file, ['Nombre', 'Correo Electrónico', 'Categoría', 'Comentarios']);
-    }
+    // Guardar los datos en el archivo de texto
+    file_put_contents($filename, $data, FILE_APPEND);
 
-    // Escribir los datos del cuestionario
-    fputcsv($file, [$nombre, $email, $categoria, $comentarios]);
-
-    // Cerrar el archivo
-    fclose($file);
-    
     echo "Datos guardados correctamente.";
 }
 ?>
