@@ -3,16 +3,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $nombre = $_POST['nombre'];
     $email = $_POST['email'];
     $categoria = $_POST['categoria'];
+    $subcategoria = $_POST['subcategoria'];
     $comentarios = $_POST['comentarios'];
 
-    $filename = "datos_cuestionario.txt";
+    $recipient = "tu-correo@ejemplo.com"; // Reemplaza esto con tu dirección de correo
+    $subject = "Nuevo registro al torneo de powerlifting";
+    $body = "Nombre: $nombre\nCorreo Electrónico: $email\nCategoría: $categoria\nSubcategoría: $subcategoria\nComentarios: $comentarios\n\n";
+    $headers = "From: $email";
 
-    // Formatear los datos
-    $data = "Nombre: $nombre\nCorreo Electrónico: $email\nCategoría: $categoria\nComentarios: $comentarios\n\n";
-
-    // Guardar los datos en el archivo de texto
-    file_put_contents($filename, $data, FILE_APPEND);
-
-    echo "Datos guardados correctamente.";
+    if (mail($recipient, $subject, $body, $headers)) {
+        echo "Datos enviados correctamente.";
+    } else {
+        echo "Error al enviar los datos.";
+    }
 }
 ?>
