@@ -3,10 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
     <title>Lifting Legend event</title>
+=======
+    <link rel="icon" type="image/png" href="IMG/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="IMG/favicon.svg" />
+    <link rel="shortcut icon" href="IMG/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="IMG/apple-touch-icon.png" />
+    <link rel="manifest" href="IMG/site.webmanifest" />    
+    <title>Torneo de Powerlifting</title>
+>>>>>>> e09580df3967eff0c795eae48362f9d3b35c9e19
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">    
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -36,44 +45,119 @@
         
         <section id="horarios" class="horarios">
             <h2>Horarios del evento</h2>
+            <h3>Día 1</h3>
             <ul>
-                <li>9:00 AM - Sesión de Apertura</li>
-                <li>10:00 AM - Competición por Categorías</li>
-                <li>2:00 PM - Finales y Premiación</li>
+                <li>7:00 AM - Recepción de competidores</li>
+                <li>8:00 AM - Comienzo del evento</li>
+                <li>8:30 AM - Comienzo de la competición</li>
+                <li>2:30 PM - Juegos para el público</li>
+                <li>10:00 PM - Cierre de puertas</li>
+            </ul>
+        
+            <h3>Día 2</h3>
+            <ul>
+                <li>7:30 AM - Recepción de competidores</li>
+                <li>8:00 AM - Comienzo del evento</li>
+                <li>8:30 AM - Comienzo de la competición</li>
+                <li>2:30 PM - Juegos para el público</li>
+                <li>10:00 PM - Cierre de puertas</li>
+            </ul>
+        
+            <h3>Día 3</h3>
+            <ul>
+                <li>7:30 AM - Recepción de competidores</li>
+                <li>8:00 AM - Comienzo del evento</li>
+                <li>8:30 AM - Comienzo de la competición</li>
+                <li>2:30 PM - Juegos para el público</li>
+                <li>10:00 PM - Cierre de puertas</li>
+            </ul>
+        
+            <h3>Día 4</h3>
+            <ul>
+                <li>7:30 AM - Recepción</li>
+                <li>8:00 AM - Comienzo del evento</li>
+                <li>8:30 AM - Comienzo de la competición</li>
+                <li>2:30 PM - Fotos con Beto</li>
+                <li>9:30 PM - Premiación</li>
+                <li>12:00 AM - Cierre de puertas</li>
             </ul>
         </section>
         
+        
         <section class="informacion">
             <h2>Información del Evento</h2>
-            <p>El evento de powerlifting 2025 se llevará a cabo en el Polideportivo Municipal de Santiago de Compostela, Galicia. Contaremos con la participación de atletas de diferentes categorías y una serie de actividades complementarias para los asistentes.</p>
-            <p><strong>Fecha:</strong> 15 de marzo de 2025</p>
-            <p><strong>Lugar:</strong> Polideportivo Municipal de Santiago de Compostela</p>
-            <p><strong>Organizado por:</strong> Federación Gallega de Powerlifting</p>
+            <p>El evento de powerlifting 2025 se llevará a cabo en el Pabellón Multiusos Fontes do Sar de Santiago de Compostela, Galicia. Contaremos con la participación de atletas de diferentes categorías y una serie de actividades complementarias para los asistentes.</p>
+            <p><strong>Fecha:</strong> 14, 15, 16 y 17 de Agosto de 2025</p>
+            <p><strong>Lugar:</strong> Multiusos Fontes do Sar de Santiago de Compostela</p>
+            <p><strong>Organizado por:</strong>  Brais Rodríguez y Andrei Irimia</p>
         </section>
         <section id="registro" class="registro">
             <h2>Regístrate al Torneo</h2>
             <p>¡No pierdas la oportunidad de participar en el evento de powerlifting más emocionante del año! Completa el formulario para inscribirte.</p>
-            <form>
+            <form id="cuestionario" method="post" action="https://formspree.io/f/xyzeyznz">
                 <label for="nombre">Nombre completo:</label>
                 <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
-        
+            
                 <label for="email">Correo electrónico:</label>
                 <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
-        
+            
                 <label for="categoria">Categoría:</label>
                 <select id="categoria" name="categoria" required>
                     <option value="">Selecciona tu categoría</option>
-                    <option value="novato">Novato</option>
-                    <option value="intermedio">Intermedio</option>
-                    <option value="avanzado">Avanzado</option>
+                    <option value="mujeres_junior">Mujeres Junior (18-23 años)</option>
+                    <option value="mujeres_open">Mujeres Open (24-39 años)</option>
+                    <option value="mujeres_master">Mujeres Máster (40+ años)</option>
+                    <option value="hombres_junior">Hombres Junior (18-23 años)</option>
+                    <option value="hombres_open">Hombres Open (24-39 años)</option>
+                    <option value="hombres_master">Hombres Máster (40+ años)</option>
                 </select>
-        
+            
+                <div id="subcategoria_container" style="display: none;">
+                    <label for="subcategoria">Subcategoría:</label>
+                    <select id="subcategoria" name="subcategoria" required>
+                        <option value="">Selecciona tu subcategoría</option>
+                        <!-- Las subcategorías se rellenarán dinámicamente en base a la categoría seleccionada -->
+                    </select>
+                </div>
+            
                 <label for="comentarios">Comentarios adicionales:</label>
                 <textarea id="comentarios" name="comentarios" placeholder="¿Algo que debamos saber?" rows="4"></textarea>
-        
+            
                 <button type="submit">Enviar inscripción</button>
             </form>
         </section>
+        
+        <script>
+            const categorias = {
+                'mujeres_junior': ['-47 kg', '-52 kg', '-57 kg', '-63 kg', '-69 kg', '-76 kg', '-84 kg', '+84 kg'],
+                'mujeres_open': ['-47 kg', '-52 kg', '-57 kg', '-63 kg', '-69 kg', '-76 kg', '-84 kg', '+84 kg'],
+                'mujeres_master': ['-47 kg', '-52 kg', '-57 kg', '-63 kg', '-69 kg', '-76 kg', '-84 kg', '+84 kg'],
+                'hombres_junior': ['-59 kg', '-66 kg', '-74 kg', '-83 kg', '-93 kg', '-105 kg', '-120 kg', '+120 kg'],
+                'hombres_open': ['-59 kg', '-66 kg', '-74 kg', '-83 kg', '-93 kg', '-105 kg', '-120 kg', '+120 kg'],
+                'hombres_master': ['-59 kg', '-66 kg', '-74 kg', '-83 kg', '-93 kg', '-105 kg', '-120 kg', '+120 kg']
+            };
+        
+            document.getElementById('categoria').addEventListener('change', function() {
+                const subcategoriaContainer = document.getElementById('subcategoria_container');
+                const subcategoriaSelect = document.getElementById('subcategoria');
+                const categoria = this.value;
+        
+                subcategoriaSelect.innerHTML = '<option value="">Selecciona tu subcategoría</option>';
+        
+                if (categoria && categorias[categoria]) {
+                    categorias[categoria].forEach(subcategoria => {
+                        const option = document.createElement('option');
+                        option.value = subcategoria;
+                        option.textContent = subcategoria;
+                        subcategoriaSelect.appendChild(option);
+                    });
+                    subcategoriaContainer.style.display = 'block';
+                } else {
+                    subcategoriaContainer.style.display = 'none';
+                }
+            });
+        </script>
+        
         <section class="actividades">
             <h2>Actividades en la ciudad</h2>
             <ul>
